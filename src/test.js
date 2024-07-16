@@ -1,14 +1,13 @@
-import style from "./css/test1.module.css"
+import Loop from "./components/loop";
 
 function Test() {
+  const list = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
   return (
     <div>
       <ul>
-        <li className="style.sty">가</li>
-        <li>나</li>
-        <li>다</li>
-        <li>다</li>
-        <li>다</li>
+        {list.map((text) => (
+            <Loop text={text} />
+        ))}
       </ul>
     </div>
   );
