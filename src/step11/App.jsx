@@ -1,10 +1,19 @@
-// import { CommentBoxList } from "./CommentBoxList";
-import { MemberList } from "../components/MemberList";
-export default function Counter(){
+import { Counter } from "./Counter";
+// import { TimerComp } from "./TimerComp";
+import { ComponentWithEffect } from './ComponentWithEffect'; 
+import { UnmountComp } from "./UnmountComp";
+import {UseMemoComp} from "./UseMemoComp";
+
+export function App(){
   return (
     <>
-     {/* <Counter/> */}
-    <unmount/>
+     {/* <Counter/>  */}
+      {/* <TimerComp/>   */}
+      {/* <ComponentWithEffect/>  */}
+      {/* <UnmountComp/>  */}
+      <UseMemoComp/> 
+    
+
     </>
   );
 }
