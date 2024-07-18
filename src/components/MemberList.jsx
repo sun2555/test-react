@@ -1,4 +1,6 @@
 import "./MemberList.css";
+// import "./MemberList2.css";
+
 import { useState } from "react";
 export function MemberList() {
   const [users, setUsers] = useState([
@@ -11,12 +13,13 @@ export function MemberList() {
   const changeName = (e) => {
     setName(e.target.value);
   };
-  const [age, setAge] = useState(0);
+  const [age, setAge] = useState("");
   const changeAge = (e) => {
     setAge(e.target.value);
   };
   const [job, setJob] = useState("");
   const changeJob = (e) => {
+    console.log(e)
     setJob(e.target.value);
   };
   const addUser = (e) => {
