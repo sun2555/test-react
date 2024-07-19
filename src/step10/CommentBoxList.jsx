@@ -1,5 +1,5 @@
 
-import { CommentBox } from "../step10CommentBox";
+import { CommentBox } from "./CommentBox";
 
 const comments = [
   {name:'손흥민',  comment:'정말 재미있는 영화였음'},
@@ -13,7 +13,7 @@ export function CommentBoxList(){
     {
       comments.map(
         (comm) => {
-           return (
+          return (
             <CommentBox name={comm.name} comment={comm.comment}></CommentBox>
           );
         }

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-export function MemberItem(props){
+export  default function MemberItem(props){
 
   useEffect(() =>{
     console.log('콤포넌트 마운딩됨 =>'+props.name);//마운팅된뒤, 수정된뒤 실행
